@@ -40,19 +40,24 @@ const Index = () => {
                 </a>
                 ; SDKs, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
               </li>
-              <li>
-                uniswap v4{" "}
-                <a href="https://uniswap.org" target="_blank" rel="noopener noreferrer">
-                  @uniswap
-                </a>
-                ; protocol documentation contributor, authored delta handling for liquidity modifications.
-              </li>
-              <li>
-                oracle contributor{" "}
-                <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
-                  @cNGN
-                </a>
-                ; refactored oracle sdk, RPC rotation for resilience, automatic retry logic.
+              <li className="pt-2">
+                <span className="text-muted-foreground">Open-Source Contributions</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    protocol documentation contributor{" "}
+                    <a href="https://uniswap.org" target="_blank" rel="noopener noreferrer">
+                      @uniswap
+                    </a>
+                    , authored delta handling for liquidity modifications on uniswap v4.
+                  </li>
+                  <li>
+                    contributor{" "}
+                    <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
+                      @cNGN
+                    </a>
+                    ; oracle sdk refactoring.
+                  </li>
+                </ul>
               </li>
               <li className="pt-2">
                 <span className="text-muted-foreground">Selected Projects</span>
@@ -74,6 +79,23 @@ const Index = () => {
                   </li>
                   <li>
                     AIChatFlow – RAG-powered question answering API using LangChain + OpenAI
+                  </li>
+                </ul>
+              </li>
+              <li className="pt-2">
+                <span className="text-muted-foreground">Selected Research</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    <a href="https://paragraph.com/@break-into-defi/uniswap-v3-advanced-mechanics" target="_blank" rel="noopener noreferrer">
+                      Uniswap V3 Advanced Mechanics
+                    </a>
+                    {" "}– concentrated liquidity, reserves, liquidity math, position management.
+                  </li>
+                  <li>
+                    <a href="https://paragraph.com/@break-into-defi/mechanics-of-uniswap-v3-liquidity-distribution" target="_blank" rel="noopener noreferrer">
+                      Mechanics of Liquidity Distribution
+                    </a>
+                    {" "}– execution tracing, slippage analysis and liquidity distribution.
                   </li>
                 </ul>
               </li>
@@ -107,7 +129,7 @@ const Index = () => {
             <a href="https://paragraph.com/@break-into-defi" target="_blank" rel="noopener noreferrer">
               blog
             </a>
-            <a href="https://twitter.com/paborjelisha" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/paulelishaa" target="_blank" rel="noopener noreferrer">
               twitter
             </a>
           </div>
