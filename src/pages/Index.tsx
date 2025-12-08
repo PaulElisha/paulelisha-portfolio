@@ -40,6 +40,13 @@ const Index = () => {
                 </a>
                 ; SDKs, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
               </li>
+              <li>
+                smart contract engineer{" "}
+                <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
+                  @asset scooper
+                </a>
+                ; wallet consolidation platform returning stablecoin (co-founder).
+              </li>
               <li className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
@@ -48,14 +55,18 @@ const Index = () => {
                     <a href="https://uniswap.org" target="_blank" rel="noopener noreferrer">
                       @uniswap
                     </a>
-                    , authored delta handling for liquidity modifications on uniswap v4.
+                    , improved technical documentation, authored{" "}
+                    <a href="https://docs.uniswap.org/contracts/v4/guides/unlock-callback#handling-deltas-for-liquidity-modifications" target="_blank" rel="noopener noreferrer">
+                      delta handling for liquidity modifications
+                    </a>
+                    {" "}on uniswap v4.
                   </li>
                   <li>
                     contributor{" "}
                     <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
                       @cNGN
                     </a>
-                    ; oracle sdk refactoring.
+                    ; oracle sdk refactoring, RPC rotation for resilience, automatic retry logic.
                   </li>
                 </ul>
               </li>
@@ -67,12 +78,6 @@ const Index = () => {
                       LiqOS
                     </a>
                     {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer (hackathon win)
-                  </li>
-                  <li>
-                    <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
-                      Asset Scooper
-                    </a>
-                    {" "}– wallet consolidation platform returning stablecoin (co-founder)
                   </li>
                   <li>
                     TaskFlow – project management API with sprint tracking, Google OAuth, MongoDB
