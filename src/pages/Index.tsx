@@ -66,7 +66,7 @@ const Index = () => {
                     <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
                       @cNGN
                     </a>
-                    ; oracle sdk refactoring, RPC rotation for resilience, automatic retry logic.
+                    ; oracle sdk refactoring, failover resilience.
                   </li>
                 </ul>
               </li>
