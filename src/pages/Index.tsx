@@ -23,18 +23,10 @@ const Index = () => {
           
           {/* Tagline */}
           <p 
-            className="text-muted-foreground mb-6 opacity-0 animate-fade-in"
+            className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
             blockchain, engineer, builder
-          </p>
-
-          {/* Bio */}
-          <p 
-            className="text-foreground mb-10 opacity-0 animate-fade-in leading-relaxed"
-            style={{ animationDelay: "75ms" }}
-          >
-            smart contract engineer focused on DeFi protocol architecture. building liquidity primitives, hooks, and onchain systems that scale.
           </p>
 
           {/* Stints Section */}
