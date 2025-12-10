@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
@@ -7,6 +8,8 @@ const Index = () => {
         <title>Paul Elisha - Blockchain Engineer</title>
         <meta name="description" content="Smart Contract Engineer with experience designing and implementing DeFi protocols. 3x global hackathon winner. Co-founder of Asset Scooper." />
       </Helmet>
+      
+      <ThemeToggle />
       
       <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24">
         <div className="max-w-3xl">
@@ -20,10 +23,18 @@ const Index = () => {
           
           {/* Tagline */}
           <p 
-            className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
+            className="text-muted-foreground mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
             blockchain, engineer, builder
+          </p>
+
+          {/* Bio */}
+          <p 
+            className="text-foreground mb-10 opacity-0 animate-fade-in leading-relaxed"
+            style={{ animationDelay: "75ms" }}
+          >
+            smart contract engineer focused on DeFi protocol architecture. building liquidity primitives, hooks, and onchain systems that scale.
           </p>
 
           {/* Stints Section */}
