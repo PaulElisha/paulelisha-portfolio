@@ -41,7 +41,7 @@ const Index = () => {
                 <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
                   @kaia labs
                 </a>
-                ; SDKs, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
+                ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
               </li>
               <li>
                 smart contract engineer{" "}
@@ -77,13 +77,13 @@ const Index = () => {
                 <span className="text-muted-foreground">Selected Projects</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
-                    <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/PaulElisha/Liq0S-Custom-UniV4-Router-For-Auction-based-Liquidity-Market-JIT" target="_blank" rel="noopener noreferrer">
                       LiqOS
                     </a>
                     {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer (hackathon win)
                   </li>
                   <li>
-                    TaskFlow – project management API with sprint tracking, Google OAuth, MongoDB
+                    <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow</a> – project management API with sprint tracking, Google OAuth, MongoDB
                   </li>
                   <li>
                     AIChatFlow – RAG-powered question answering API using LangChain + OpenAI
