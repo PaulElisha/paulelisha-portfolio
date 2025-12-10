@@ -86,7 +86,7 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow</a> – project management API with sprint tracking, Google OAuth, MongoDB
                   </li>
                   <li>
-                    AIChatFlow – RAG-powered question answering API using LangChain + OpenAI
+                    <a href="https://github.com/PaulElisha/question-answering-AI" target="_blank" rel="noopener noreferrer">AIChatFlow</a> – RAG-powered question answering API using LangChain + OpenAI
                   </li>
                 </ul>
               </li>
