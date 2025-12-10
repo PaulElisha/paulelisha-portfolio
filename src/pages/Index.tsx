@@ -42,7 +42,7 @@ const Index = () => {
               </li>
               <li>
                 smart contract engineer{" "}
-                <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
+                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
                   @asset scooper
                 </a>
                 ; wallet consolidation platform returning stablecoin (co-founder).
@@ -141,11 +141,11 @@ const Index = () => {
 
           {/* Email */}
           <a 
-            href="mailto:paborjelisha@gmail.com"
+            href="mailto:ajaoireoluwa1@gmail.com"
             className="opacity-0 animate-fade-in"
             style={{ animationDelay: "300ms" }}
           >
-            paborjelisha@gmail.com
+            email
           </a>
         </div>
       </main>
