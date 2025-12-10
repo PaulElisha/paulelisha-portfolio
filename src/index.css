@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&display=swap');
 
 @layer base {
   :root {
@@ -81,7 +81,7 @@
   }
 
   html {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Geist Mono', monospace;
   }
 
   body {
