@@ -88,6 +88,9 @@ const Index = () => {
                   <li>
                     <a href="https://github.com/PaulElisha/question-answering-AI" target="_blank" rel="noopener noreferrer">AIChatFlow</a> – RAG-powered question answering API using LangChain + OpenAI
                   </li>
+                  <li>
+                    <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
+                  </li>
                 </ul>
               </li>
               <li className="pt-2">
