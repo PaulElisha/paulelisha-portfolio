@@ -107,6 +107,17 @@ const Index = () => {
                   </li>
                 </ul>
               </li>
+              <li className="pt-2">
+                <span className="text-muted-foreground">Writing</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    <a href="https://medium.com/@oluwolekayode61/how-to-build-a-simple-decentralized-website-using-ens-filecoin-3b8f4c2a1e5d" target="_blank" rel="noopener noreferrer">
+                      Decentralized Website with ENS & Filecoin
+                    </a>
+                    {" "}– deploy censorship-resistant sites using IPFS and ENS.
+                  </li>
+                </ul>
+              </li>
             </ul>
           </section>
 
