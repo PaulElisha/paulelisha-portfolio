@@ -39,14 +39,14 @@ const Index = () => {
               <li>
                 developer support{" "}
                 <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
-                  @kaia labs ↗
+                  @kaia labs
                 </a>
-                ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
+                ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
               </li>
               <li>
                 smart contract engineer{" "}
                 <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
-                  @asset scooper ↗
+                  @asset scooper
                 </a>
                 ; wallet consolidation platform returning stablecoin (co-founder).
               </li>
@@ -56,18 +56,18 @@ const Index = () => {
                   <li>
                     protocol documentation contributor{" "}
                     <a href="https://uniswap.org" target="_blank" rel="noopener noreferrer">
-                      @uniswap ↗
+                      @uniswap
                     </a>
                     , improved technical documentation, authored{" "}
                     <a href="https://docs.uniswap.org/contracts/v4/guides/unlock-callback#handling-deltas-for-liquidity-modifications" target="_blank" rel="noopener noreferrer">
-                      delta handling for liquidity modifications ↗
+                      delta handling for liquidity modifications
                     </a>
                     {" "}on uniswap v4.
                   </li>
                   <li>
                     contributor{" "}
                     <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
-                      @cNGN ↗
+                      @cNGN
                     </a>
                     ; oracle sdk refactoring, failover resilience.
                   </li>
@@ -78,15 +78,15 @@ const Index = () => {
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
                     <a href="https://github.com/PaulElisha/Liq0S-Custom-UniV4-Router-For-Auction-based-Liquidity-Market-JIT" target="_blank" rel="noopener noreferrer">
-                      LiqOS ↗
+                      LiqOS
                     </a>
                     {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer (hackathon win)
                   </li>
                   <li>
-                    <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow ↗</a> – project management API with sprint tracking, Google OAuth, MongoDB
+                    <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow</a> – project management API with sprint tracking, Google OAuth, MongoDB
                   </li>
                   <li>
-                    <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
+                    <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
                   </li>
                 </ul>
               </li>
@@ -95,13 +95,13 @@ const Index = () => {
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
                     <a href="https://paragraph.com/@break-into-defi/uniswap-v3-advanced-mechanics" target="_blank" rel="noopener noreferrer">
-                      Uniswap V3 Advanced Mechanics ↗
+                      Uniswap V3 Advanced Mechanics
                     </a>
                     {" "}– concentrated liquidity, reserves, liquidity math, position management.
                   </li>
                   <li>
                     <a href="https://paragraph.com/@break-into-defi/mechanics-of-uniswap-v3-liquidity-distribution" target="_blank" rel="noopener noreferrer">
-                      Mechanics of Liquidity Distribution ↗
+                      Mechanics of Liquidity Distribution
                     </a>
                     {" "}– execution tracing, slippage analysis and liquidity distribution.
                   </li>
@@ -132,13 +132,13 @@ const Index = () => {
             style={{ animationDelay: "250ms" }}
           >
             <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
-              github ↗
+              github
             </a>
             <a href="https://paragraph.com/@break-into-defi" target="_blank" rel="noopener noreferrer">
-              blog ↗
+              blog
             </a>
             <a href="https://x.com/paulelishaa" target="_blank" rel="noopener noreferrer">
-              twitter ↗
+              twitter
             </a>
           </div>
 
