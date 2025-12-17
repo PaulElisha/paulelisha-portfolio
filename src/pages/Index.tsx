@@ -26,7 +26,7 @@ const Index = () => {
             className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
-            building blockchain protocols, backend systems, and research. 3x hackathon winner (Base, Kaia, Uniswap).
+            blockchain, backend(typescript), builder
           </p>
 
           {/* Stints Section */}
@@ -118,7 +118,7 @@ const Index = () => {
             className="text-foreground mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "150ms" }}
           >
-            building DeFi protocols, writing research, and 3x hackathon winner (Base, Kaia, Uniswap).
+            building blockchain protocols, backend systems, writing research, and 3x hackathon winner (Base, Kaia, Uniswap).
           </p>
 
           {/* Status */}
