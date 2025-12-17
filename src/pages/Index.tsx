@@ -26,7 +26,7 @@ const Index = () => {
             className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
-            blockchain, backend(typescript), builder
+            building blockchain protocols, backend systems, and research. 3x hackathon winner (Base, Kaia, Uniswap).
           </p>
 
           {/* Stints Section */}
