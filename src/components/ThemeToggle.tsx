@@ -8,11 +8,14 @@ const ThemeToggle = () => {
     const root = document.documentElement;
     const stored = localStorage.getItem("theme");
     
+    // Always default to light mode unless explicitly set to dark
+    root.classList.remove("dark");
+    
     if (stored === "dark") {
       root.classList.add("dark");
       setIsDark(true);
     } else {
-      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
       setIsDark(false);
     }
   }, []);
