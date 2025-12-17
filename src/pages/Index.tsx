@@ -43,13 +43,6 @@ const Index = () => {
                 </a>
                 ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
               </li>
-              <li>
-                smart contract engineer{" "}
-                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
-                  @asset scooper ↗
-                </a>
-                ; wallet consolidation platform returning stablecoin (co-founder).
-              </li>
               <li className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
@@ -80,7 +73,7 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/Liq0S-Custom-UniV4-Router-For-Auction-based-Liquidity-Market-JIT" target="_blank" rel="noopener noreferrer">
                       LiqOS ↗
                     </a>
-                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer (hackathon win)
+                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer
                   </li>
                   <li>
                     <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow ↗</a> – project management API with sprint tracking, Google OAuth, MongoDB
@@ -118,7 +111,7 @@ const Index = () => {
             className="text-foreground mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "150ms" }}
           >
-            building blockchain protocols, backend systems, writing research, and 3x hackathon winner (Base, Kaia, Uniswap).
+            my philosophy is building strong base first before adding complexity.
           </p>
 
           {/* Status */}
