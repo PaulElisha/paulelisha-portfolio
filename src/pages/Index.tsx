@@ -26,7 +26,7 @@ const Index = () => {
             className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
-            blockchain, engineer, builder
+            blockchain, backend(typescript), builder
           </p>
 
           {/* Stints Section */}
