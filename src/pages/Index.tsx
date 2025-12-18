@@ -37,18 +37,18 @@ const Index = () => {
             <h2 className="text-foreground mb-4">Stints:</h2>
             <ul className="list-disc list-inside space-y-2 text-foreground">
               <li>
-                smart contract engineer{" "}
-                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
-                  @asset scooper ↗
-                </a>
-                ; wallet consolidation platform returning stablecoin (@base hackathon project).
-              </li>
-              <li>
                 developer support{" "}
                 <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
                   @kaia labs ↗
                 </a>
                 ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
+              </li>
+              <li>
+                smart contract engineer{" "}
+                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
+                  @asset scooper ↗
+                </a>
+                ; wallet consolidation platform returning stablecoin (co-founder).
               </li>
               <li className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
@@ -69,7 +69,7 @@ const Index = () => {
                     <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
                       @cNGN ↗
                     </a>
-                    ; oracle sdk refactoring—removed direct private key parsing, decoupled wallet from sdk, added RPC failover resilience.
+                    ; oracle sdk refactoring, failover resilience.
                   </li>
                 </ul>
               </li>
@@ -80,7 +80,7 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/Liq0S-Custom-UniV4-Router-For-Auction-based-Liquidity-Market-JIT" target="_blank" rel="noopener noreferrer">
                       LiqOS ↗
                     </a>
-                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer
+                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer (hackathon win)
                   </li>
                   <li>
                     <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow ↗</a> – project management API with sprint tracking, Google OAuth, MongoDB
@@ -118,7 +118,7 @@ const Index = () => {
             className="text-foreground mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "150ms" }}
           >
-            my philosophy is building a strong base first before adding complexity.
+            building DeFi protocols, writing research, and 3x hackathon winner (Base, Kaia, Uniswap).
           </p>
 
           {/* Status */}

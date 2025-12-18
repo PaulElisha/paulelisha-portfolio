@@ -91,14 +91,11 @@
   }
 
   a {
-    @apply underline underline-offset-2 transition-colors duration-200;
-    color: hsl(var(--link));
-    text-decoration-color: hsl(var(--link) / 0.5);
+    @apply text-foreground underline decoration-foreground/50 underline-offset-2 transition-colors duration-200;
   }
 
   a:hover {
-    color: hsl(var(--link-hover));
-    text-decoration-color: hsl(var(--link-hover));
+    @apply text-foreground decoration-foreground;
   }
 
   ::selection {
