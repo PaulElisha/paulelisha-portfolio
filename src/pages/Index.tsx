@@ -37,6 +37,13 @@ const Index = () => {
             <h2 className="text-foreground mb-4">Stints:</h2>
             <ul className="list-disc list-inside space-y-2 text-foreground">
               <li>
+                smart contract engineer{" "}
+                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
+                  @asset scooper ↗
+                </a>
+                ; wallet consolidation platform returning stablecoin (@base hackathon project).
+              </li>
+              <li>
                 developer support{" "}
                 <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
                   @kaia labs ↗
@@ -62,7 +69,7 @@ const Index = () => {
                     <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
                       @cNGN ↗
                     </a>
-                    ; oracle sdk refactoring, failover resilience.
+                    ; oracle sdk refactoring—removed direct private key parsing, decoupled wallet from sdk, added RPC failover resilience.
                   </li>
                 </ul>
               </li>
@@ -111,7 +118,7 @@ const Index = () => {
             className="text-foreground mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "150ms" }}
           >
-            my philosophy is building strong base first before adding complexity.
+            my philosophy is building a strong base first before adding complexity.
           </p>
 
           {/* Status */}
