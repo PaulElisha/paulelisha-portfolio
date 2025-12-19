@@ -91,11 +91,7 @@
   }
 
   a {
-    @apply text-foreground underline decoration-foreground/50 underline-offset-2 transition-colors duration-200;
-  }
-
-  a:hover {
-    @apply text-foreground decoration-foreground;
+    @apply text-foreground underline decoration-foreground/50 underline-offset-2 transition-colors duration-200 hover:text-link hover:decoration-link;
   }
 
   ::selection {
