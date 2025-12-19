@@ -48,7 +48,7 @@ const Index = () => {
                 <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
                   @asset scooper ↗
                 </a>
-                ; wallet consolidation platform returning stablecoin (co-founder).
+                ; wallet consolidation platform returning stablecoin (base-hackathon).
               </li>
               <li className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
@@ -69,7 +69,7 @@ const Index = () => {
                     <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
                       @cNGN ↗
                     </a>
-                    ; oracle sdk refactoring, failover resilience.
+                    ; oracle sdk refactoring, failover resilience, resolved signer injection and improved security.
                   </li>
                 </ul>
               </li>
@@ -80,7 +80,7 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/Liq0S-Custom-UniV4-Router-For-Auction-based-Liquidity-Market-JIT" target="_blank" rel="noopener noreferrer">
                       LiqOS ↗
                     </a>
-                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer (hackathon win)
+                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer
                   </li>
                   <li>
                     <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow ↗</a> – project management API with sprint tracking, Google OAuth, MongoDB
@@ -89,7 +89,7 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
                   </li>
                   <li>
-                    <a href="https://stock-vision-ai-kappa.vercel.app" target="_blank" rel="noopener noreferrer">StockAI ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
+                    <a href="https://stock-prediction-nu.vercel.app" target="_blank" rel="noopener noreferrer">StockAI ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
                   </li>
                 </ul>
               </li>
