@@ -89,7 +89,7 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
                   </li>
                   <li>
-                    <a href="https://stock-prediction-nu.vercel.app" target="_blank" rel="noopener noreferrer">StockAI ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
+                    <a href="https://predictiv-trend.vercel.app" target="_blank" rel="noopener noreferrer">StockAI ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
                   </li>
                 </ul>
               </li>
