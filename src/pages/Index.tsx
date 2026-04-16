@@ -11,8 +11,8 @@ const Index = () => {
       
       <ThemeToggle />
       
-      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24 flex items-center justify-center">
-        <div className="max-w-3xl w-full mx-auto text-right">
+      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24 flex items-center justify-start">
+        <div className="max-w-3xl w-full text-left">
           {/* Name */}
           <h1 
             className="text-foreground font-medium text-base mb-1 opacity-0 animate-fade-in"
@@ -131,7 +131,7 @@ const Index = () => {
 
           {/* Social Links */}
           <div 
-            className="flex flex-wrap justify-end gap-x-3 gap-y-1 mb-4 opacity-0 animate-fade-in"
+            className="flex flex-wrap gap-x-3 gap-y-1 mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "250ms" }}
           >
             <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
