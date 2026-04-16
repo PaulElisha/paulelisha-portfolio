@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -80,7 +78,9 @@
     @apply border-border;
   }
 
-  html {
+  html,
+  body,
+  #root {
     font-family: 'Space Grotesk', sans-serif;
   }
 
