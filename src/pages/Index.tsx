@@ -35,7 +35,7 @@ const Index = () => {
             style={{ animationDelay: "100ms" }}
           >
             <h2 className="text-foreground mb-4">Stints:</h2>
-            <ul className="list-disc list-inside space-y-2 text-foreground">
+            <ul className="list-disc list-inside space-y-2 text-foreground inline-block text-left">
               <li>
                 developer support{" "}
                 <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
