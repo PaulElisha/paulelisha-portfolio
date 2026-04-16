@@ -11,8 +11,8 @@ const Index = () => {
       
       <ThemeToggle />
       
-      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24 flex items-center justify-start">
-        <div className="max-w-3xl w-full text-left">
+      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24">
+        <div className="max-w-3xl">
           {/* Name */}
           <h1 
             className="text-foreground font-medium text-base mb-1 opacity-0 animate-fade-in"
@@ -35,7 +35,7 @@ const Index = () => {
             style={{ animationDelay: "100ms" }}
           >
             <h2 className="text-foreground mb-4">Stints:</h2>
-            <ul className="list-disc list-inside space-y-2 text-foreground inline-block text-left">
+            <ul className="list-disc list-inside space-y-2 text-foreground">
               <li>
                 developer support{" "}
                 <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
