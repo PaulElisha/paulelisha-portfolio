@@ -81,12 +81,12 @@
   html,
   body,
   #root {
-    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
   }
 
