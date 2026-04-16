@@ -81,7 +81,7 @@
   html,
   body,
   #root {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   }
 
   body {
