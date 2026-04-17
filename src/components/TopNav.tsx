@@ -61,14 +61,14 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
       {/* Center wordmark */}
       <a
         href="/"
-        className="absolute left-1/2 -translate-x-1/2 text-[13px] font-semibold tracking-[0.18em] uppercase no-underline text-foreground"
+        className="hidden xl:block absolute left-1/2 -translate-x-1/2 text-[13px] font-semibold tracking-[0.18em] uppercase no-underline text-foreground"
       >
         Paul Elisha<sup className="ml-0.5 text-[9px]">®</sup>
       </a>
 
       {/* Right: category chips + theme + about */}
       <div className="flex items-center gap-2">
-        <div className="hidden md:flex items-center gap-1.5 mr-2">
+        <div className="hidden lg:flex items-center gap-1.5 mr-2">
           {categories.map((c) => {
             const active = c === activeCategory;
             return (
