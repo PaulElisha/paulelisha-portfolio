@@ -11,8 +11,8 @@ const Index = () => {
       
       <ThemeToggle />
       
-      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24">
-        <div className="max-w-3xl">
+      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24 flex justify-center">
+        <div className="w-full max-w-3xl text-left">
           {/* Name */}
           <h1 
             className="text-foreground font-medium text-base mb-1 opacity-0 animate-fade-in"
