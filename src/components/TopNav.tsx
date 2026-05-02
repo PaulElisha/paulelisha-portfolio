@@ -44,60 +44,78 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
   };
 
   return (
-    <header className="fixed top-0 inset-x-0 z-30 px-6 md:px-10 py-5 flex items-center justify-between bg-background/80 backdrop-blur-sm">
-      {/* Left: section links */}
-      <nav className="flex items-center gap-6 text-[12px] uppercase tracking-wider">
-        {sections.map((s) => (
-          <a
-            key={s.label}
-            href={s.href}
-            className="text-foreground/80 hover:text-foreground no-underline"
-          >
-            {s.label}
-          </a>
-        ))}
-      </nav>
+    <header className="fixed top-0 inset-x-0 z-30 bg-background/80 backdrop-blur-sm">
+      <div className="px-6 md:px-10 py-5 flex items-center justify-between">
+        {/* Left: section links */}
+        <nav className="flex items-center gap-6 text-[12px] uppercase tracking-wider">
+          {sections.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              className="text-foreground/80 hover:text-foreground no-underline"
+            >
+              {s.label}
+            </a>
+          ))}
+        </nav>
 
-      {/* Center wordmark */}
-      <a
-        href="/"
-        className="hidden xl:block absolute left-1/2 -translate-x-1/2 text-[13px] font-semibold tracking-[0.18em] uppercase no-underline text-foreground"
-      >
-        Paul Elisha<sup className="ml-0.5 text-[9px]">®</sup>
-      </a>
-
-      {/* Right: category chips + theme + about */}
-      <div className="flex items-center gap-2">
-        <div className="hidden lg:flex items-center gap-1.5 mr-2">
-          {categories.map((c) => {
-            const active = c === activeCategory;
-            return (
-              <button
-                key={c}
-                onClick={() => onCategoryChange(c)}
-                className={`nav-chip ${active ? "nav-chip-active" : "hover:bg-muted"}`}
-              >
-                {c}
-              </button>
-            );
-          })}
-        </div>
-        {rightLinks.map((s) => (
-          <a
-            key={s.label}
-            href={s.href}
-            className="text-[12px] uppercase tracking-wider text-foreground/80 hover:text-foreground no-underline px-2"
-          >
-            {s.label}
-          </a>
-        ))}
-        <button
-          onClick={toggleTheme}
-          aria-label="Toggle theme"
-          className="ml-1 nav-chip hover:bg-muted"
+        {/* Center wordmark */}
+        <a
+          href="/"
+          className="hidden xl:block absolute left-1/2 -translate-x-1/2 text-[13px] font-semibold tracking-[0.18em] uppercase no-underline text-foreground"
         >
-          {isDark ? <Sun size={12} /> : <Moon size={12} />}
-        </button>
+          Paul Elisha<sup className="ml-0.5 text-[9px]">®</sup>
+        </a>
+
+        {/* Right: category chips (lg+) + theme + about */}
+        <div className="flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-1.5 mr-2">
+            {categories.map((c) => {
+              const active = c === activeCategory;
+              return (
+                <button
+                  key={c}
+                  onClick={() => onCategoryChange(c)}
+                  className={`nav-chip ${active ? "nav-chip-active" : "hover:bg-muted"}`}
+                >
+                  {c}
+                </button>
+              );
+            })}
+          </div>
+          {rightLinks.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              className="text-[12px] uppercase tracking-wider text-foreground/80 hover:text-foreground no-underline px-2"
+            >
+              {s.label}
+            </a>
+          ))}
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="ml-1 nav-chip hover:bg-muted"
+          >
+            {isDark ? <Sun size={12} /> : <Moon size={12} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile category bar */}
+      <div className="lg:hidden px-6 pb-3 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+        {categories.map((c) => {
+          const active = c === activeCategory;
+          return (
+            <button
+              key={c}
+              onClick={() => onCategoryChange(c)}
+              className={`nav-chip shrink-0 ${active ? "nav-chip-active" : "hover:bg-muted"}`}
+            >
+              {c}
+            </button>
+          );
+        })}
       </div>
     </header>
   );
