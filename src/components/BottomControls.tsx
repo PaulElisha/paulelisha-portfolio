@@ -53,6 +53,12 @@ const BottomControls = ({
           >
             <Shuffle size={12} /> Mix
           </button>
+          <a
+            href="mailto:ajaoireoluwa1@gmail.com"
+            className="lg:hidden text-[12px] uppercase tracking-wider hover:opacity-70 transition-opacity no-underline"
+          >
+            Submit
+          </a>
         </div>
       </div>
     </div>
