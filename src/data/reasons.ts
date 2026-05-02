@@ -23,7 +23,7 @@ export const reasons: Reason[] = [
     title: "blockchain, backend(typescript), builder",
     body:
       "Smart contract engineer designing DeFi protocols. 3x global hackathon winner. Co-founder of Asset Scooper. Open to opportunities.",
-    source: "PAUL ELISHA / paulelisha.lovable.app",
+    source: "PAUL ELISHA",
   },
   {
     id: 2,
