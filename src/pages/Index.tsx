@@ -61,8 +61,8 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_400px] gap-10">
-          {/* Hero card column */}
-          <section className="flex items-start lg:items-center justify-center min-h-[70vh]">
+          {/* Hero card column — sticky on mobile so only trending scrolls */}
+          <section className="sticky top-24 lg:static z-10 bg-background/95 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none flex items-start lg:items-center justify-center lg:min-h-[70vh] py-2 lg:py-0">
             <div className="w-full max-w-[640px]">
               <ReasonCard reason={activeReason} />
             </div>
