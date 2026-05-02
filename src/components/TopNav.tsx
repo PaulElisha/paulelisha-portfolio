@@ -49,7 +49,7 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
         </a>
 
         {/* Mobile category chips inline at top */}
-        <div className="lg:hidden flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 -mx-1 px-1">
+        <div className="lg:hidden flex items-center justify-center gap-1.5 overflow-x-auto no-scrollbar flex-1 -mx-1 px-1">
           {categories.map((c) => {
             const active = c === activeCategory;
             return (
