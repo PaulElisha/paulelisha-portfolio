@@ -125,6 +125,16 @@ export const reasons: Reason[] = [
     source: "Paragraph / break-into-defi",
     href: "https://paragraph.com/@break-into-defi/mechanics-of-uniswap-v3-liquidity-distribution",
   },
+  {
+    id: 12,
+    refDoc: "PE-RES-003",
+    category: "RESEARCH",
+    title: "Uniswap V2 Advanced Mechanics",
+    body:
+      "Walkthrough of Uniswap V2 internals: constant product math, reserves, swaps, and pricing mechanics.",
+    source: "Paragraph / break-into-defi",
+    href: "https://paragraph.com/@break-into-defi/uniswap-v2-advanced-mechanics",
+  },
 ];
 
 export const TOTAL_REASONS = reasons.length;
