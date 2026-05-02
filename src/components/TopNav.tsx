@@ -1,13 +1,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const sections = [
-  { label: "Index", href: "#index" },
-  { label: "Database", href: "#database" },
-];
-
 const rightLinks = [
-  { label: "Submit", href: "mailto:ajaoireoluwa1@gmail.com" },
   { label: "About", href: "#about" },
 ];
 
