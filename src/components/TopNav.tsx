@@ -65,7 +65,7 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
         </div>
 
         {/* Right: category chips (lg+) + theme + about */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           <div className="hidden lg:flex items-center gap-1.5 mr-2">
             {categories.map((c) => {
               const active = c === activeCategory;
@@ -80,15 +80,17 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
               );
             })}
           </div>
-          {rightLinks.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              className="text-[12px] uppercase tracking-wider text-foreground/80 hover:text-foreground no-underline px-2"
-            >
-              {s.label}
-            </a>
-          ))}
+          <div className="hidden lg:flex items-center">
+            {rightLinks.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                className="text-[12px] uppercase tracking-wider text-foreground/80 hover:text-foreground no-underline px-2"
+              >
+                {s.label}
+              </a>
+            ))}
+          </div>
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
@@ -97,22 +99,6 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
             {isDark ? <Sun size={12} /> : <Moon size={12} />}
           </button>
         </div>
-      </div>
-
-      {/* Mobile category bar */}
-      <div className="lg:hidden px-6 pb-3 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-        {categories.map((c) => {
-          const active = c === activeCategory;
-          return (
-            <button
-              key={c}
-              onClick={() => onCategoryChange(c)}
-              className={`nav-chip shrink-0 ${active ? "nav-chip-active" : "hover:bg-muted"}`}
-            >
-              {c}
-            </button>
-          );
-        })}
       </div>
     </header>
   );
