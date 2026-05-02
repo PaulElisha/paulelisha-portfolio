@@ -39,27 +39,30 @@ const TopNav = ({ activeCategory, onCategoryChange }: TopNavProps) => {
 
   return (
     <header className="fixed top-0 inset-x-0 z-30 bg-background/80 backdrop-blur-sm">
-      <div className="px-6 md:px-10 py-5 flex items-center justify-between">
-        {/* Left: section links */}
-        <nav className="flex items-center gap-6 text-[12px] uppercase tracking-wider">
-          {sections.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              className="text-foreground/80 hover:text-foreground no-underline"
-            >
-              {s.label}
-            </a>
-          ))}
-        </nav>
-
-        {/* Center wordmark */}
+      <div className="px-6 md:px-10 py-5 flex items-center justify-between gap-4">
+        {/* Left: name (desktop) / category chips (mobile) */}
         <a
           href="/"
-          className="hidden xl:block absolute left-1/2 -translate-x-1/2 text-[13px] font-semibold tracking-[0.18em] uppercase no-underline text-foreground"
+          className="hidden lg:block text-[13px] font-semibold tracking-[0.18em] uppercase no-underline text-foreground shrink-0"
         >
           Paul Elisha<sup className="ml-0.5 text-[9px]">®</sup>
         </a>
+
+        {/* Mobile category chips inline at top */}
+        <div className="lg:hidden flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 -mx-1 px-1">
+          {categories.map((c) => {
+            const active = c === activeCategory;
+            return (
+              <button
+                key={c}
+                onClick={() => onCategoryChange(c)}
+                className={`nav-chip shrink-0 !text-[10px] !px-2 !py-1 ${active ? "nav-chip-active" : "hover:bg-muted"}`}
+              >
+                {c}
+              </button>
+            );
+          })}
+        </div>
 
         {/* Right: category chips (lg+) + theme + about */}
         <div className="flex items-center gap-2">
