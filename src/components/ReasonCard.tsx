@@ -48,7 +48,7 @@ const ReasonCard = ({ reason }: ReasonCardProps) => {
       <div className="mt-8 flex items-end justify-between gap-4 flex-wrap">
         <div className="text-[10px] uppercase tracking-wider opacity-80 leading-relaxed">
           {reason.source && <div>{reason.source}</div>}
-          <div>1000REASONS_VOTE / paulelisha</div>
+          <div>paulelisha</div>
         </div>
         {reason.href && (
           <a
