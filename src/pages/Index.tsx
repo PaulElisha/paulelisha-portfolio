@@ -26,7 +26,7 @@ const Index = () => {
             className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
-            blockchain, backend(typescript), builder
+            research, engineer
             <br />
             2x hackathon winner @ Base, Kaia (on-chain summer).
           </p>
@@ -38,19 +38,27 @@ const Index = () => {
           >
             <h2 className="text-foreground mb-4">Stints:</h2>
             <ul className="list-disc list-inside space-y-2 text-foreground">
-              <li>
-                developer support{" "}
-                <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
-                  @kaia labs ↗
-                </a>
-                ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
-              </li>
-              <li>
-                smart contract engineer{" "}
-                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
-                  @asset scooper ↗
-                </a>
-                ; wallet consolidation platform returning stablecoin (base-hackathon).
+              <li className="pt-2">
+                <span className="text-muted-foreground">Experience</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    developer support{" "}
+                    <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
+                      @kaia labs ↗
+                    </a>
+                    ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
+                  </li>
+                  <li>
+                    smart contract engineer{" "}
+                    <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
+                      @asset scooper ↗
+                    </a>
+                    ; wallet consolidation platform returning stablecoin for meme and dust tokens (base-hackathon).
+                  </li>
+                  <li>
+                    software engineer intern @tiva-creative; built an MVP for an in-house food ordering project 'the-other-wife'.
+                  </li>
+                </ul>
               </li>
               <li className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
@@ -73,6 +81,9 @@ const Index = () => {
                     </a>
                     ; oracle sdk refactoring, failover resilience, resolved signer injection and improved security.
                   </li>
+                  <li>
+                    <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – build a Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data).
+                  </li>
                 </ul>
               </li>
               <li className="pt-2">
@@ -86,9 +97,6 @@ const Index = () => {
                   </li>
                   <li>
                     <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow ↗</a> – project management API with sprint tracking, Google OAuth, MongoDB
-                  </li>
-                  <li>
-                    <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
                   </li>
                   <li>
                     <a href="https://predictiv-trend.vercel.app" target="_blank" rel="noopener noreferrer">PredictivTrend ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
@@ -115,14 +123,6 @@ const Index = () => {
             </ul>
           </section>
 
-          {/* Interests */}
-          <p 
-            className="text-foreground mb-4 opacity-0 animate-fade-in"
-            style={{ animationDelay: "150ms" }}
-          >
-            building DeFi protocols, writing research, and 3x hackathon winner (Base, Kaia, Uniswap).
-          </p>
-
           {/* Status */}
           <p 
             className="text-muted-foreground mb-6 opacity-0 animate-fade-in"
@@ -136,25 +136,15 @@ const Index = () => {
             className="flex flex-wrap gap-x-3 gap-y-1 mb-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "250ms" }}
           >
-            <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
-              github ↗
-            </a>
-            <a href="https://paragraph.com/@break-into-defi" target="_blank" rel="noopener noreferrer">
-              blog ↗
-            </a>
             <a href="https://x.com/paulelishaa" target="_blank" rel="noopener noreferrer">
-              twitter ↗
+              X ↗
+            </a>
+            <a 
+              href="mailto:ajaoireoluwa1@gmail.com"
+            >
+              ajaoireoluwa1@gmail.com ↗
             </a>
           </div>
-
-          {/* Email */}
-          <a 
-            href="mailto:ajaoireoluwa1@gmail.com"
-            className="opacity-0 animate-fade-in"
-            style={{ animationDelay: "300ms" }}
-          >
-            email ↗
-          </a>
         </div>
       </main>
     </>
