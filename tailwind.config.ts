@@ -15,7 +15,6 @@ export default {
     extend: {
       fontFamily: {
         mono: ["'JetBrains Mono'", "monospace"],
-        sans: ["'JetBrains Mono'", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -25,10 +24,6 @@ export default {
         foreground: "hsl(var(--foreground))",
         link: "hsl(var(--link))",
         "link-hover": "hsl(var(--link-hover))",
-        reason: {
-          DEFAULT: "hsl(var(--reason))",
-          foreground: "hsl(var(--reason-foreground))",
-        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

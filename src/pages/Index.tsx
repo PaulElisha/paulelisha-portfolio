@@ -1,89 +1,160 @@
 import { Helmet } from "react-helmet-async";
-import { useMemo, useState } from "react";
-import TopNav from "@/components/TopNav";
-import ReasonCard from "@/components/ReasonCard";
-import TrendingSidebar from "@/components/TrendingSidebar";
-import BottomControls from "@/components/BottomControls";
-import { reasons, TOTAL_REASONS } from "@/data/reasons";
-
-const pad = (n: number, w = 4) => String(n).padStart(w, "0");
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
-  const [activeId, setActiveId] = useState(1);
-  const [activeCategory, setActiveCategory] = useState("ALL");
-
-  const filtered = useMemo(
-    () =>
-      activeCategory === "ALL"
-        ? reasons
-        : reasons.filter((r) => r.category === activeCategory),
-    [activeCategory]
-  );
-
-  const activeReason =
-    reasons.find((r) => r.id === activeId) ?? reasons[0];
-
-  const goPrev = () => {
-    const idx = reasons.findIndex((r) => r.id === activeId);
-    setActiveId(reasons[(idx - 1 + reasons.length) % reasons.length].id);
-  };
-  const goNext = () => {
-    const idx = reasons.findIndex((r) => r.id === activeId);
-    setActiveId(reasons[(idx + 1) % reasons.length].id);
-  };
-  const shuffle = () => {
-    const others = reasons.filter((r) => r.id !== activeId);
-    setActiveId(others[Math.floor(Math.random() * others.length)].id);
-  };
-
   return (
     <>
       <Helmet>
-        <title>Paul Elisha — Blockchain Engineer</title>
-        <meta
-          name="description"
-          content="Smart contract engineer. 3x global hackathon winner. Co-founder of Asset Scooper. Browse reasons to work with Paul."
-        />
+        <title>Paul Elisha - Blockchain Engineer</title>
+        <meta name="description" content="Smart Contract Engineer with experience designing and implementing DeFi protocols. 3x global hackathon winner. Co-founder of Asset Scooper." />
       </Helmet>
+      
+      <ThemeToggle />
+      
+      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24">
+        <div className="max-w-3xl">
+          {/* Name */}
+          <h1 
+            className="text-foreground font-medium text-base mb-1 opacity-0 animate-fade-in"
+            style={{ animationDelay: "0ms" }}
+          >
+            paul elisha
+          </h1>
+          
+          {/* Tagline */}
+          <p 
+            className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
+            style={{ animationDelay: "50ms" }}
+          >
+            blockchain, backend(typescript), builder
+          </p>
 
-      <TopNav
-        activeCategory={activeCategory}
-        onCategoryChange={setActiveCategory}
-      />
-
-      <main className="relative min-h-screen pt-24 pb-28 px-6 md:px-10 overflow-hidden">
-        {/* Giant faded background numeral */}
-        <div
-          aria-hidden
-          className="faded-numeral absolute inset-0 flex items-center justify-center text-[34vw] md:text-[28vw] lg:text-[24vw] -z-0"
-        >
-          {pad(TOTAL_REASONS, 4)}
-        </div>
-
-        <div className="relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_400px] gap-10">
-          {/* Hero card column — sticky on mobile so only trending scrolls */}
-          <section className="sticky top-24 lg:static z-10 bg-background/95 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none flex items-start lg:items-center justify-center lg:min-h-[70vh] py-2 lg:py-0">
-            <div className="w-full max-w-[640px]">
-              <ReasonCard reason={activeReason} />
-            </div>
+          {/* Stints Section */}
+          <section 
+            className="mb-8 opacity-0 animate-fade-in"
+            style={{ animationDelay: "100ms" }}
+          >
+            <h2 className="text-foreground mb-4">Stints:</h2>
+            <ul className="list-disc list-inside space-y-2 text-foreground">
+              <li>
+                developer support{" "}
+                <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
+                  @kaia labs ↗
+                </a>
+                ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
+              </li>
+              <li>
+                smart contract engineer{" "}
+                <a href="https://assetscooper.xyz" target="_blank" rel="noopener noreferrer">
+                  @asset scooper ↗
+                </a>
+                ; wallet consolidation platform returning stablecoin (base-hackathon).
+              </li>
+              <li className="pt-2">
+                <span className="text-muted-foreground">Open-Source Contributions</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    protocol documentation contributor{" "}
+                    <a href="https://uniswap.org" target="_blank" rel="noopener noreferrer">
+                      @uniswap ↗
+                    </a>
+                    , improved technical documentation, authored{" "}
+                    <a href="https://docs.uniswap.org/contracts/v4/guides/unlock-callback#handling-deltas-for-liquidity-modifications" target="_blank" rel="noopener noreferrer">
+                      delta handling for liquidity modifications ↗
+                    </a>
+                    {" "}on uniswap v4.
+                  </li>
+                  <li>
+                    contributor{" "}
+                    <a href="https://cngn.co" target="_blank" rel="noopener noreferrer">
+                      @cNGN ↗
+                    </a>
+                    ; oracle sdk refactoring, failover resilience, resolved signer injection and improved security.
+                  </li>
+                </ul>
+              </li>
+              <li className="pt-2">
+                <span className="text-muted-foreground">Selected Projects</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    <a href="https://github.com/PaulElisha/Liq0S-Custom-UniV4-Router-For-Auction-based-Liquidity-Market-JIT" target="_blank" rel="noopener noreferrer">
+                      LiqOS ↗
+                    </a>
+                    {" "}– custom Uniswap V4 hook, auction-based JIT liquidity rebalancer
+                  </li>
+                  <li>
+                    <a href="https://github.com/PaulElisha/task-flow-api" target="_blank" rel="noopener noreferrer">TaskFlow ↗</a> – project management API with sprint tracking, Google OAuth, MongoDB
+                  </li>
+                  <li>
+                    <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data)
+                  </li>
+                  <li>
+                    <a href="https://predictiv-trend.vercel.app" target="_blank" rel="noopener noreferrer">PredictivTrend ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
+                  </li>
+                </ul>
+              </li>
+              <li className="pt-2">
+                <span className="text-muted-foreground">Selected Research</span>
+                <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
+                  <li>
+                    <a href="https://paragraph.com/@break-into-defi/uniswap-v3-advanced-mechanics" target="_blank" rel="noopener noreferrer">
+                      Uniswap V3 Advanced Mechanics ↗
+                    </a>
+                    {" "}– concentrated liquidity, reserves, liquidity math, position management.
+                  </li>
+                  <li>
+                    <a href="https://paragraph.com/@break-into-defi/mechanics-of-uniswap-v3-liquidity-distribution" target="_blank" rel="noopener noreferrer">
+                      Mechanics of Liquidity Distribution ↗
+                    </a>
+                    {" "}– execution tracing, slippage analysis and liquidity distribution.
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </section>
 
-          {/* Trending sidebar */}
-          <TrendingSidebar
-            reasons={filtered}
-            activeId={activeId}
-            onSelect={setActiveId}
-          />
+          {/* Interests */}
+          <p 
+            className="text-foreground mb-4 opacity-0 animate-fade-in"
+            style={{ animationDelay: "150ms" }}
+          >
+            building DeFi protocols, writing research, and 3x hackathon winner (Base, Kaia, Uniswap).
+          </p>
+
+          {/* Status */}
+          <p 
+            className="text-muted-foreground mb-6 opacity-0 animate-fade-in"
+            style={{ animationDelay: "200ms" }}
+          >
+            open to opportunities
+          </p>
+
+          {/* Social Links */}
+          <div 
+            className="flex flex-wrap gap-x-3 gap-y-1 mb-4 opacity-0 animate-fade-in"
+            style={{ animationDelay: "250ms" }}
+          >
+            <a href="https://github.com/paulelisha" target="_blank" rel="noopener noreferrer">
+              github ↗
+            </a>
+            <a href="https://paragraph.com/@break-into-defi" target="_blank" rel="noopener noreferrer">
+              blog ↗
+            </a>
+            <a href="https://x.com/paulelishaa" target="_blank" rel="noopener noreferrer">
+              twitter ↗
+            </a>
+          </div>
+
+          {/* Email */}
+          <a 
+            href="mailto:ajaoireoluwa1@gmail.com"
+            className="opacity-0 animate-fade-in"
+            style={{ animationDelay: "300ms" }}
+          >
+            email ↗
+          </a>
         </div>
       </main>
-
-      <BottomControls
-        current={activeId}
-        total={TOTAL_REASONS}
-        onPrev={goPrev}
-        onNext={goNext}
-        onShuffle={shuffle}
-      />
     </>
   );
 };
