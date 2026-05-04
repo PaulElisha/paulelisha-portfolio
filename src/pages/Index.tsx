@@ -11,8 +11,8 @@ const Index = () => {
       
       <ThemeToggle />
       
-      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24">
-        <div className="max-w-3xl">
+      <main className="min-h-screen bg-background px-6 py-16 md:px-12 md:py-24 lg:px-24 flex justify-center">
+        <div className="max-w-3xl w-full">
           {/* Name */}
           <h1 
             className="text-foreground font-medium text-base mb-1 opacity-0 animate-fade-in"
@@ -27,6 +27,8 @@ const Index = () => {
             style={{ animationDelay: "50ms" }}
           >
             blockchain, backend(typescript), builder
+            <br />
+            2x hackathon winner @ Base, Kaia (on-chain summer).
           </p>
 
           {/* Stints Section */}
