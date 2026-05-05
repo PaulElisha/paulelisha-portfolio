@@ -44,7 +44,7 @@ const Index = () => {
             </h2>
             <ul className="list-disc list-inside space-y-2 text-foreground">
               <li>backend systems and architecture; typescript, node.js deep dive, api design, event-driven architecture, cloud infra & devops (in-progress).</li>
-              <li>reactive & functional logic; functional reactive programming (rxjs), async data communication, typescript.</li>
+              <li>reactive & functional logic; functional reactive programming (rxjs), async data communication.</li>
               <li>data architecture; designing data systems, database performance, schema design.</li>
             </ul>
           </section>
