@@ -74,7 +74,7 @@ const Index = () => {
                     ; wallet consolidation platform returning stablecoin for meme and dust tokens (base-hackathon).
                   </li>
                   <li>
-                    software engineer intern @tiva creative; built an MVP for an in-house food ordering project 'the-other-wife'.
+                    software engineer intern @tiva creative; built a MVP for an in-house project, the-other-wife: food ordering app.
                   </li>
                 </ul>
               </li>
@@ -160,7 +160,7 @@ const Index = () => {
             <a 
               href="mailto:ajaoireoluwa1@gmail.com"
             >
-              ajaoireoluwa1@gmail.com ↗
+              mail ↗
             </a>
           </div>
         </div>
