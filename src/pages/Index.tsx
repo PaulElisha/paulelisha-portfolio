@@ -31,6 +31,24 @@ const Index = () => {
             2x hackathon winner @ Base, Kaia (on-chain summer).
           </p>
 
+          {/* Coursework Section */}
+          <section
+            className="mb-8 opacity-0 animate-fade-in"
+            style={{ animationDelay: "75ms" }}
+          >
+            <h2 className="text-foreground mb-4">
+              specialized coursework{" "}
+              <a href="https://frontendmasters.com" target="_blank" rel="noopener noreferrer">
+                @ frontendmasters ↗
+              </a>
+            </h2>
+            <ul className="list-disc list-inside space-y-2 text-foreground">
+              <li>backend systems and architecture; node.js deep dive, api design, event-driven architecture, cloud infra & devops (in-progress).</li>
+              <li>reactive & functional logic; functional reactive programming, async data communication, typescript.</li>
+              <li>data architecture; designing data systems, database performance, schema design.</li>
+            </ul>
+          </section>
+
           {/* Stints Section */}
           <section 
             className="mb-8 opacity-0 animate-fade-in"
@@ -46,7 +64,7 @@ const Index = () => {
                     <a href="https://kaia.io" target="_blank" rel="noopener noreferrer">
                       @kaia labs ↗
                     </a>
-                    ; <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a>, Permit2 deployment, subgraph integrations, onboarded 40+ developers.
+                    ; built <a href="https://github.com/PaulElisha/kaiascan-sdk-ts" target="_blank" rel="noopener noreferrer">SDKs ↗</a> for the blockchain platform, onboarded developers, facilitated smoother experience for integration developers.
                   </li>
                   <li>
                     smart contract engineer{" "}
@@ -56,7 +74,7 @@ const Index = () => {
                     ; wallet consolidation platform returning stablecoin for meme and dust tokens (base-hackathon).
                   </li>
                   <li>
-                    software engineer intern @tiva-creative; built an MVP for an in-house food ordering project 'the-other-wife'.
+                    software engineer intern @tiva creative; built an MVP for an in-house food ordering project 'the-other-wife'.
                   </li>
                 </ul>
               </li>
