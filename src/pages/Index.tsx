@@ -74,7 +74,7 @@ const Index = () => {
                     ; wallet consolidation platform returning stablecoin for meme and dust tokens (base-hackathon).
                   </li>
                   <li>
-                    software engineer intern @tiva creative; built a MVP for an in-house project, the-other-wife: food ordering app.
+                    software engineer intern @tiva creative; built the client-facing api for an in-house project, the-other-wife; a food ordering app, at MVP stage.
                   </li>
                 </ul>
               </li>
