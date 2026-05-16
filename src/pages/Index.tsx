@@ -128,7 +128,7 @@ const Index = () => {
                     <a href="https://paragraph.com/@break-into-defi/uniswap-v3-advanced-mechanics" target="_blank" rel="noopener noreferrer">
                       Uniswap V3 Advanced Mechanics ↗
                     </a>
-                    {" "}– concentrated liquidity, reserves, liquidity math, position management.
+                    {" "}– a deep dive explanation on concentrated liquidity, reserves, liquidity math, position management.
                   </li>
                   <li>
                     <a href="https://paragraph.com/@break-into-defi/mechanics-of-uniswap-v3-liquidity-distribution" target="_blank" rel="noopener noreferrer">
