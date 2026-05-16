@@ -134,7 +134,7 @@ const Index = () => {
                     <a href="https://paragraph.com/@break-into-defi/mechanics-of-uniswap-v3-liquidity-distribution" target="_blank" rel="noopener noreferrer">
                       Mechanics of Liquidity Distribution ↗
                     </a>
-                    {" "}– execution tracing, slippage analysis and liquidity distribution.
+                    {" "}– token swapping analysis: execution tracing, slippage analysis, and a literature review on liquidity distribution.
                   </li>
                 </ul>
               </li>
