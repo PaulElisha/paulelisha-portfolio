@@ -26,7 +26,7 @@ const Index = () => {
             className="text-muted-foreground mb-10 opacity-0 animate-fade-in"
             style={{ animationDelay: "50ms" }}
           >
-            software engineer, research
+            smart contract engineer, research
             <br />
             2x hackathon winner @ Base, Kaia (on-chain summer).
           </p>
