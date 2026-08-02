@@ -4,72 +4,71 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    --background: 214 32% 93%;
+    --foreground: 222 60% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 222 60% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 222 60% 15%;
 
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 212 52% 24%;
+    --primary-foreground: 214 32% 93%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 214 32% 88%;
+    --secondary-foreground: 222 60% 15%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 210 25% 96%;
+    --muted-foreground: 212 30% 40%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 208 46% 43%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 8%;
+    --border: 214 20% 80%;
+    --input: 214 20% 80%;
+    --ring: 208 46% 43%;
 
-    --radius: 0rem;
+    --radius: 0.75rem;
 
-    /* Custom colors */
-    --link: 221 83% 53%;
-    --link-hover: 221 83% 40%;
+    --link: 208 46% 43%;
+    --link-hover: 208 46% 33%;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 95%;
+    --background: 222 60% 15%;
+    --foreground: 214 32% 93%;
 
-    --card: 0 0% 4%;
-    --card-foreground: 0 0% 95%;
+    --card: 212 52% 18%;
+    --card-foreground: 214 32% 93%;
 
-    --popover: 0 0% 4%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 212 52% 18%;
+    --popover-foreground: 214 32% 93%;
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 214 32% 93%;
+    --primary-foreground: 222 60% 15%;
 
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 212 45% 25%;
+    --secondary-foreground: 214 32% 93%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 212 45% 20%;
+    --muted-foreground: 214 25% 70%;
 
-    --accent: 0 0% 14%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 208 46% 43%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 95%;
+    --destructive-foreground: 214 32% 93%;
 
-    --border: 0 0% 14%;
-    --input: 0 0% 14%;
-    --ring: 0 0% 83%;
+    --border: 212 40% 25%;
+    --input: 212 40% 25%;
+    --ring: 208 46% 43%;
 
-    --link: 221 83% 65%;
-    --link-hover: 221 83% 75%;
+    --link: 208 60% 65%;
+    --link-hover: 208 60% 75%;
   }
 }
 
@@ -81,17 +80,21 @@
   html,
   body,
   #root {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.6;
   }
 
   a {
-    @apply text-foreground underline decoration-foreground/50 underline-offset-2 transition-colors duration-200 hover:text-link hover:decoration-link;
+    @apply text-foreground underline decoration-foreground/40 underline-offset-4 transition-colors duration-200 hover:text-link hover:decoration-link;
   }
 
   ::selection {
