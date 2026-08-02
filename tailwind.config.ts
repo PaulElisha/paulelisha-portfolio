@@ -14,8 +14,6 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["'Fira Sans'", "sans-serif"],
-        serif: ["'DM Serif Display'", "serif"],
         mono: ["'JetBrains Mono'", "monospace"],
       },
       colors: {
