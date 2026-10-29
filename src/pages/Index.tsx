@@ -104,7 +104,7 @@ const Index = () => {
                   </li>
                 </ul>
               </li>
-              <li className="pt-2">
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Selected Projects</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
@@ -121,7 +121,7 @@ const Index = () => {
                   </li>
                 </ul>
               </li>
-              <li className="pt-2">
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Selected Research</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
