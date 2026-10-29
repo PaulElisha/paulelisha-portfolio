@@ -56,7 +56,7 @@ const Index = () => {
           >
             <h2 className="text-foreground mb-4">Stints:</h2>
             <ul className="list-disc list-inside space-y-2 text-foreground">
-              <li className="pt-2">
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Experience</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
@@ -78,7 +78,7 @@ const Index = () => {
                   </li>
                 </ul>
               </li>
-              <li className="pt-2">
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
