@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import ThemeToggle from "@/components/ThemeToggle";
+import Tilt from "@/components/Tilt";
 
 const Index = () => {
   return (
@@ -56,7 +57,7 @@ const Index = () => {
           >
             <h2 className="text-foreground mb-4">Stints:</h2>
             <ul className="list-disc list-inside space-y-2 text-foreground">
-              <li className="pt-2">
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Experience</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
@@ -77,8 +78,8 @@ const Index = () => {
                     software engineer intern @tiva creative; built the client-facing api for an in-house project, the-other-wife; a food ordering app, at MVP stage.
                   </li>
                 </ul>
-              </li>
-              <li className="pt-2">
+              </Tilt>
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Open-Source Contributions</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
@@ -103,8 +104,8 @@ const Index = () => {
                     <a href="https://github.com/PaulElisha/mantle-ai-plugin" target="_blank" rel="noopener noreferrer">Mantle AI Plugin ↗</a> – build a Goat SDK plugin for AI agents to interact with Mantle ecosystem (bridging, tokens, on-chain data).
                   </li>
                 </ul>
-              </li>
-              <li className="pt-2">
+              </Tilt>
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Selected Projects</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
@@ -120,8 +121,8 @@ const Index = () => {
                     <a href="https://predictiv-trend.vercel.app" target="_blank" rel="noopener noreferrer">PredictivTrend ↗</a> – AI-powered stock analysis tool using Mistral AI for performance reports and predictions
                   </li>
                 </ul>
-              </li>
-              <li className="pt-2">
+              </Tilt>
+              <Tilt className="pt-2">
                 <span className="text-muted-foreground">Selected Research</span>
                 <ul className="list-[circle] list-inside pl-4 mt-2 space-y-1">
                   <li>
@@ -137,7 +138,7 @@ const Index = () => {
                     {" "}– token swapping analysis: execution tracing, slippage analysis, and a literature review on liquidity distribution.
                   </li>
                 </ul>
-              </li>
+              </Tilt>
             </ul>
           </section>
 
