@@ -2,8 +2,6 @@ import { useParams } from "react-router-dom";
 import { ledger } from "@/lib/portfolioData";
 import DetailShell from "@/components/site/DetailShell";
 
-const shot = (url: string, w = 1600, h = 900) =>
-  `https://image.thum.io/get/width/${w}/crop/${h}/noanimate/${url}`;
 
 export default function ProjectDetail() {
   const { id } = useParams();
