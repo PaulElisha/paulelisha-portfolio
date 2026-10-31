@@ -39,7 +39,7 @@ export default function ProjectDetail() {
             playsInline
             controls
             preload="metadata"
-            poster={item.image || shot(item.link)}
+            poster={item.image}
             className="aspect-video block w-full object-contain"
           />
         ) : item.image ? (
