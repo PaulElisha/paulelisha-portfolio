@@ -1,27 +1,31 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Index from "./pages/Index";
+import { queryClientInstance } from "@/lib/query-client";
+import ScrollToTop from "@/components/ScrollToTop";
+import Home from "./pages/Home";
+import Work from "./pages/Work";
+import ProjectDetail from "./pages/ProjectDetail";
+import Research from "./pages/Research";
+import ResearchDetail from "./pages/ResearchDetail";
+import CV from "./pages/CV";
 import NotFound from "./pages/NotFound";
-
-const queryClient = new QueryClient();
 
 const App = () => (
   <HelmetProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
+    <QueryClientProvider client={queryClientInstance}>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/:id" element={<ProjectDetail />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/research/:id" element={<ResearchDetail />} />
+          <Route path="/cv" element={<CV />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </QueryClientProvider>
   </HelmetProvider>
 );
