@@ -42,13 +42,17 @@ export default function ProjectDetail() {
             poster={item.image || shot(item.link)}
             className="aspect-video block w-full object-contain"
           />
-        ) : (
+        ) : item.image ? (
           <img
-            src={item.image || shot(item.link)}
+            src={item.image}
             alt={item.name}
             loading="lazy"
             className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
           />
+        ) : (
+          <div className="flex aspect-video w-full items-center justify-center bg-muted">
+            <span className="text-sm text-muted-foreground">{item.name}</span>
+          </div>
         )}
       </div>
 
